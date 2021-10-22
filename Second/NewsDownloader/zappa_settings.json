@@ -1,0 +1,12 @@
+{
+    "dev": {
+       "app_function": "app.handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "newsDownloader",
+        "runtime": "python3.8",
+	"keep_warm": false,
+	"apigateway_enabled":false,
+        "s3_bucket": "news-big-data2021-1"
+    }
+}
