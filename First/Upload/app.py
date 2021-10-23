@@ -10,8 +10,8 @@ def handler(event,context):
     
     # Obtain of dates
     dateToday = datetime.now().replace(hour = 0, minute = 0, second = 0, microsecond = 0)
-    dateYesterday = dateToday - timedelta(days=1)
-    dateYesterday2 = dateToday - timedelta(days=2)
+    dateYesterday = dateToday - timedelta(days=1) #1
+    dateYesterday2 = dateToday - timedelta(days=2) #2
 
     # Conversion to timestamp 
     ts1 = round(datetime.timestamp(dateYesterday2))
