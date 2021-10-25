@@ -1,0 +1,21 @@
+{
+  "dev": {
+        "app_function": "app.handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "scraping",
+        "runtime": "python3.8",
+        "s3_bucket": "news-big-data2021-2",
+	"keep_warm": false,
+	"apigateway_enabled":false,
+	"events": [{
+            "function": "app.handler",
+            "event_source": {
+                  "arn":  "arn:aws:s3:::news-big-data2021-1",
+                  "events": [
+                    "s3:ObjectCreated:*"
+                  ]
+               }
+            }],
+    }
+}
